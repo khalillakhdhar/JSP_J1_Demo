@@ -4,7 +4,9 @@
 <html>
 <head>
 <%
-
+String n=request.getParameter("nom");
+String prenom=request.getParameter("prenom");
+int age=Integer.parseInt(request.getParameter("age")); //Float.parseFloat
 
 %>
 
