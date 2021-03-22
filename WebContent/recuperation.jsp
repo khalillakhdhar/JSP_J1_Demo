@@ -19,5 +19,8 @@ User us=new User(n,p,a);
 <body>
 <h1>Bienvenu</h1>
  <%= us.toString() %>
+ 
+ <br>
+ <jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>
