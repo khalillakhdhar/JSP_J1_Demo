@@ -5,8 +5,8 @@
 <head>
 <%
 String n=request.getParameter("nom");
-String prenom=request.getParameter("prenom");
-int age=Integer.parseInt(request.getParameter("age")); //Float.parseFloat
+String p=request.getParameter("prenom");
+int a=Integer.parseInt(request.getParameter("age")); //Float.parseFloat
 
 %>
 
@@ -15,6 +15,7 @@ int age=Integer.parseInt(request.getParameter("age")); //Float.parseFloat
 <title>Récupération</title>
 </head>
 <body>
-<h1>Bienvenu</h1>
+<h1>Bienvenu <%=n+" "+p %></h1>
+<% out.print("votre age est "+a); %>
 </body>
 </html>
