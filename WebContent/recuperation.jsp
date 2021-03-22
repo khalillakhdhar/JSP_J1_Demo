@@ -1,3 +1,4 @@
+<%@page import="demonstration.User"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -7,6 +8,7 @@
 String n=request.getParameter("nom");
 String p=request.getParameter("prenom");
 int a=Integer.parseInt(request.getParameter("age")); //Float.parseFloat
+User us=new User(n,p,a);
 
 %>
 
@@ -15,7 +17,7 @@ int a=Integer.parseInt(request.getParameter("age")); //Float.parseFloat
 <title>Récupération</title>
 </head>
 <body>
-<h1>Bienvenu <%=n+" "+p %></h1>
-<% out.print("votre age est "+a); %>
+<h1>Bienvenu</h1>
+ <%= us.toString() %>
 </body>
 </html>
