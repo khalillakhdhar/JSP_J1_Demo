@@ -9,10 +9,10 @@
 <body>
 <form>
 <table>
-<tr><td>Nom</td><td><input type="text" name="nom"></td></tr>
-<tr><td>Prénom</td><td><input type="text" name="prenom"></td></tr>
-<tr><td>Age</td><td><input type="number" name="age"></td></tr>
-
+<tr><td>Nom</td><td><input type="text" pattern="[A-Z a-z]{2,30}" required name="nom"></td></tr>
+<tr><td>Prénom</td><td><input type="text" required name="prenom"></td></tr>
+<tr><td>Age</td><td><input type="number" min="1" name="age"></td></tr>
+<tr><td><input type="submit" value="envoyer"></td></tr>
 </table>
 
 </form>
