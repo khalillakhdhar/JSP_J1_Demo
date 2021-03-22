@@ -7,7 +7,7 @@
 <title>formulaire</title>
 </head>
 <body>
-<form>
+<form method="post" action="recuperation.jsp">
 <table>
 <tr><td>Nom</td><td><input type="text" pattern="[A-Z a-z]{2,30}" title="le nom ne peut contenir que des lettres"  required name="nom"></td></tr>
 <tr><td>Prénom</td><td><input type="text" pattern="[A-Z a-z]{2,30}" required name="prenom"></td></tr>
